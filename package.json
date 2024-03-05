@@ -6,7 +6,8 @@
     
     "tailwind:css": "postcss public/stylesheets/tailwind.css -o public/stylesheets/Tstyle.css",
     "start": "npm run tailwind:css && ts-node ./bin/www",
-    "nodemon": "nodemon --ext ts,js,json ./bin/www"
+    "nodemon": "nodemon --ext ts,js,json ./bin/www",
+    "vercel-build": "echo test"
   },
   "dependencies": {
     "autoprefixer": "^10.4.18",
