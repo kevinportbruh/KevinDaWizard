@@ -6,7 +6,6 @@ import logger from 'morgan';
 
 import indexRouter from './app_server/routes/index';
 
-require('./app_server/models/db');
 
 var app = express();
 

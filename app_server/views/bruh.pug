@@ -1,0 +1,42 @@
+- var navItems = ['Top', 'Services', 'About Us', 'Contact'] 
+
+doctype html
+html(lang='ja')
+  head
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title Foo Company
+    style 
+      include ../../public/stylesheets/Tstyle.css
+  body
+    header
+      
+        nav.flex.items-center.justify-between.flex-wrap.bg-purple-600.text-white.p-6
+          a.font-bold(href="/") Kevin Da Wizard 😈
+          ul.flex.justify-end
+            each item in navItems
+              li
+                a.block.p-4(href="#")= item
+   
+   
+    main
+      section.container.mb-12
+        h2.text-4xl.font-bold.mb-6 Our Services
+        .grid.grid-cols-3.gap-12
+          div
+            h3.text-2xl.font-bold.mb-3.text-red-900 Service 1
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan, sem et porttitor placerat, lacus risus molestie ligula, congue venenatis augue ante ac dui. Aliquam ipsum neque, tempus id magna eget, fringilla sollicitudin nunc. Phasellus non eros maximus, posuere elit in, vestibulum orci. Phasellus eget pellentesque ligula.
+          div
+            h3.text-2xl.font-bold.mb-3 Service 2
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan, sem et porttitor placerat, lacus risus molestie ligula, congue venenatis augue ante ac dui. Aliquam ipsum neque, tempus id magna eget, fringilla sollicitudin nunc. Phasellus non eros maximus, posuere elit in, vestibulum orci. Phasellus eget pellentesque ligula.
+          div
+            h3.text-2xl.font-bold.mb-3 Service 3
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan, sem et porttitor placerat, lacus risus molestie ligula, congue venenatis augue ante ac dui. Aliquam ipsum neque, tempus id magna eget, fringilla sollicitudin nunc. Phasellus non eros maximus, posuere elit in, vestibulum orci. Phasellus eget pellentesque ligula.
+    footer.w-full.bg-slate-900.text-white
+      .container.flex.justify-between.items-center.mb-6.p-8
+        a.font-bold(href="#") Foo Company 
+        nav 
+          ul.flex.justify-end
+            each item in navItems
+              li
+                a.block.p-4(href="#")= item
+      small.block.text-center Copyright © 2023 Foo Company
