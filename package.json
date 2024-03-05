@@ -1,7 +1,10 @@
 {
   "name": "kevindawizard",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
+  "engines": {
+    "node": "20.11.0"
+  },
   "scripts": {
     
     "tailwind:css": "postcss public/stylesheets/tailwind.css -o public/stylesheets/Tstyle.css",
