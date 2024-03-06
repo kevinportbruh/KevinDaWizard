@@ -59,3 +59,18 @@ a {
   color: #00B7FF;
 }
 
+.word {
+  display: inline-block;
+  background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); /* Define the rainbow gradient */
+   /* Make the text transparent */
+  -webkit-background-clip: text; /* Clip the text to the background gradient */
+  background-clip: text;
+  transition: background-position 2s ease-in-out; /* Add a transition effect */
+ 
+}
+
+.word:hover {
+  color: transparent;
+  background-size: 200% auto; /* Expand the background gradient */
+  background-position: 100% 0; /* Move the background gradient to the end (right) */
+}
