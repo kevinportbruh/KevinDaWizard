@@ -8,6 +8,6 @@ const ctrlMain = new MainCtrl();
 /* GET home page. */
 router.get('/', ctrlMain.index);
 router.get('/about', ctrlMain.aboutPage);
-router.get('/bruh', ctrlMain.bruh);
+//router.get('/bruh', ctrlMain.bruh);
 
 export default router;
