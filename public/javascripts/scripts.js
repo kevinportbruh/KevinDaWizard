@@ -14,3 +14,7 @@ function rotateIcon(){
 }
 
 
+function alertUser(){
+    alert("This will be a Resume download button or an email me button. I'm not sure yet.");
+}
+
