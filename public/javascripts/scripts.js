@@ -1,3 +1,14 @@
+import Typed from 'typed.js';
+
+
+const typed = new Typed('#typed', {
+    strings: ['developer', 'designer', 'programmer'],
+    typeSpeed: 50,
+    loop: true
+  });
+
+
+
 function rotateIcon(){
     const icon = document.getElementById('Ticon');
     icon.animate([
