@@ -1,31 +1,9 @@
-import Typed from 'typed.js';
-
-
-const typed = new Typed('#typed', {
-    strings: ['developer', 'designer', 'programmer'],
-    typeSpeed: 50,
-    loop: true
-  });
-
-
-
-function rotateIcon(){
-    const icon = document.getElementById('Ticon');
-    icon.animate([
-        { transform: 'scale(0.5)' },
-        { transform: 'rotate(90deg)' },
-        { transform: 'scale(1)' }
-       
-
-    ], {
-        duration: 500,
-        iterations: 0
-    });
-
-}
-
-
-function alertUser(){
-    alert("This will be a Resume download button or an email me button. I'm not sure yet.");
-}
-
+import { run } from './run.js';
+import * as prog from 'public/javascripts/slime_dish.js'
+run(prog, { element : document.querySelector('pre') }).then(function(e){
+  console.log(e)
+  console.log("we did not throw an error")
+}).catch(function(e) {
+  console.warn(e.message)
+  console.log(e.error)
+})

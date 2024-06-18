@@ -10,11 +10,11 @@ export default class MainController {
     res.render('about', { title: 'About' });
   }
 
-  /*
+  
   bruh = (req: Request, res: Response, next: NextFunction) => {
     res.render('bruh', { title: 'bruh' });
   }
-  */
+  
 
 }
 

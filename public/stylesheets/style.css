@@ -20,9 +20,26 @@ body {
   text-align: center;
   font-family: 'Cabin',;
   margin-bottom: 20px;
+
+
+
 }
 
+.customGradient {
+  background-image: linear-gradient(90deg,#15052d,#2d0864,#15052d);
+  background-size: 100% 100%;
+  background-repeat: repeat;
 
+}
+.complimentGrad{
+  background-image: linear-gradient(90deg,#2d0864,#15052d,#2d0864);
+  background-size: 100% 100%;
+  background-repeat: repeat;
+}
+
+p{
+  color: white;
+}
 .sharpbox{
   border-radius: 0px;
   border: 2px solid #7016f7;
@@ -34,6 +51,8 @@ body {
   color: #7016f7;
   text-align: center;
   font-family: 'Cabin',;
+
+
 
 }
 
